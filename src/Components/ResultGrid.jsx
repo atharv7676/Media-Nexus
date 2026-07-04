@@ -75,13 +75,9 @@ function ResultGrid() {
   return (
     <>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-6">
-        {results.map((item, idx) => {
-          return (
-            <div key={idx}>
-              <ResultCard item={item} />
-            </div>
-          );
-        })}
+        {results.map((item) => (
+          <ResultCard key={`${item.type}-${item.id}`} item={item} />
+        ))}
       </div>
 
       <div className="flex justify-center items-center gap-6 py-10">
@@ -97,7 +93,8 @@ function ResultGrid() {
       transition-all duration-200
       disabled:opacity-40
       disabled:cursor-not-allowed
-    ">
+    "
+        >
           ← Previous
         </button>
 

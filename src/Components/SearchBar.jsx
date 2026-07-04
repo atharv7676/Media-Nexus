@@ -16,14 +16,14 @@ function SearchBar() {
   return (
     <div>
       <div className="flex justify-center items-center gap-3 py-8">
-        <BsStars className="text-cyan-400 text-5xl" />
+        <BsStars className="text-cyan-400 text-3xl sm:text-5xl" />
 
-        <h1 className="text-5xl font-extrabold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
+        <h1 className="text-3xl sm:text-5xl font-extrabold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
           Media Nexus
         </h1>
       </div>
       <form
-        className="flex gap-5 bg-gray-900 p-01"
+       className="flex flex-col sm:flex-row gap-5 bg-gray-900 mx-4 sm:mx-8 items-center rounded-xl"
         onSubmit={(e) => {
           submitHandler(e);
         }}
@@ -36,10 +36,10 @@ function SearchBar() {
           required
           type="text"
           placeholder="Explore Media Here"
-          className="px-4 py-2 m-4 border border-gray-300 rounded-lg outline-none focus:ring-2 focus:ring-blue-500 w-9/12  "
+         className="px-4 py-2 m-4 border border-gray-300 rounded-lg outline-none focus:ring-2 focus:ring-blue-500 w-80 sm:w-8/12 min-w-0"
         />
 
-        <button className="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition m-4 active:scale-95">
+        <button className="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition m-4 active:scale-95 w-50 sm:w-auto">
           Search Here
         </button>
       </form>
