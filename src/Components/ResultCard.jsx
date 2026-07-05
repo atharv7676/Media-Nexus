@@ -56,9 +56,10 @@ function ResultCard({ item, showSave = true, showRemove = false, onRemove }) {
           href={item.src}
           target="_blank"
           rel="noreferrer"
+          download={item.type === "video"}
           className="mt-4 inline-block w-full text-center bg-blue-600 hover:bg-blue-700 py-2 rounded-lg transition active:scale-95"
         >
-          Open {item.type}
+          {item.type === "video" ? "Download" : `Open ${item.type}`}
         </a>
 
         {showSave && (

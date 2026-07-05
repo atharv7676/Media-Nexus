@@ -60,7 +60,7 @@ export async function fetchVideos(query, page = 1, per_page = 15) {
     }
 }
 
-export async function fetchGifs(query, per_page = 15, page = 1) {
+export async function fetchGifs(query, page = 1, per_page = 15) {
     const params = new URLSearchParams({
         api_key: GIPHY_KEY,
         q: query,
