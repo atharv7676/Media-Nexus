@@ -7,6 +7,9 @@
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4.x-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
 [![Vite](https://img.shields.io/badge/Vite-8.x-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
 [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](#-license)
+[![Live Demo](https://img.shields.io/badge/Live_Demo-Vercel-black?style=for-the-badge&logo=vercel&logoColor=white)](https://media-nexus-pi.vercel.app/)
+
+### 🔗 [Live Demo → media-nexus-pi.vercel.app](https://media-nexus-pi.vercel.app/)
 
 ---
 
@@ -142,6 +145,10 @@ VITE_GIPHY_KEY=your_giphy_api_key
 ---
 
 ## 🚀 Usage
+
+Try it live: **[media-nexus-pi.vercel.app](https://media-nexus-pi.vercel.app/)** — no setup required.
+
+Or run it locally:
 
 1. Run the app with `npm run dev`
 2. Type a search term (e.g. `nature`, `technology`, `coffee`) into the search bar
